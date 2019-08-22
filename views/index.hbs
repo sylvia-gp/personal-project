@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Welcome to your tanks!</title>
-  </head>
-  <body>
     <ul>
     {{#each tanks}}
-      <li>Tank number {{id}} is {{litres}} litres {{img}}</li>
+      <li><a href='./tank{{id}}'>Tank number {{id}}</a> is {{litres}} litres {{img}}</li>
     {{/each}}
     </ul>
-  </body>
-</html>
