@@ -12,4 +12,13 @@ router.get('/', (req, res) => {
     })
 })
 
+router.get('/tank:id', (req, res) => {
+    db.getTanks()
+    .where('tanks.id', req.params.id)
+    .then((result) => {
+        res.render('partials/tankinfopage', {tanks: result})
+    })
+})
+
+
 module.exports = router
