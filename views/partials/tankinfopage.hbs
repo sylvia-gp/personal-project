@@ -1,10 +1,9 @@
 {{#each tanks}}
         <h1>Welcome to Tank {{id}}!</h1>
-{{/each}}
-
 <h2>What would you like to view?<h2>
 <ul>
-    <li>Fish</li>
+    <li><a href='./tank{{id}}/fish'>Fish</a></li>
     <li>Water Parameters</li>
     <li>Cleaning log</li>
 </ul>
+{{/each}}
