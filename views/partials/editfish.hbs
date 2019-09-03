@@ -1,0 +1,21 @@
+{{#each fish}}
+<form class="form" action="/fish{{id}}" method="post">
+  <label for="species" class="form-item">
+    Species:
+    <input type="text" name="species" value="{{species}}">
+  </label> <br><br>
+  
+  <label for="quantity" class="form-item">
+    Quantity in tank:
+    <input type="text" name="quantity" value="{{quantity}}">
+  </label><br><br>
+  
+  <label for="tank_id" class="form-item">
+    What number tank are they in?:
+    <input type="text" name="tank_id" value="{{tank_id}}">
+  </label><br><br>
+  
+  <input type="submit" name="" value="Submit">
+</form>
+
+{{/each}}

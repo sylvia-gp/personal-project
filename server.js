@@ -2,6 +2,7 @@ const express = require('express')
 const hbs = require('express-handlebars')
 
 const tankRoutes = require('./routes/tank')
+const fishRoutes = require('./routes/newfish')
 
 const server = express()
 
@@ -15,5 +16,6 @@ server.use(express.static('public'))
 // Routes
 
 server.use('/', tankRoutes)
+server.use('/newfish', fishRoutes)
 
 module.exports = server

@@ -5,11 +5,11 @@ const router = express.Router()
 const development = require('../knexfile').development
 const knex = require('knex')(development)
 
-router.get('/newfish', (req, res) => {
+router.get('/', (req, res) => {
     res.render('partials/newfish')
 })
 
-router.post('/newfish', (req, res) => {
+router.post('/', (req, res) => {
     const addNewFish = {
         image: req.body.image,
         species: req.body.species,
